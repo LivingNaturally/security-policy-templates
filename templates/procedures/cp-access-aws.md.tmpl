@@ -10,10 +10,10 @@ This is achieved with the following processes:
 * An organization master account (`{{companyShortName}}-master`) in AWS is configured with
   IAM roles such as Developer and Security.
 * SAML SSO and trust relationship is established between the roles in
-  `{{companyShortName}}-master` and an "AWS application" provisioned in Okta.
+  `{{companyShortName}}-master` and an "AWS application" provisioned in Microsoft 365.
 * Users are assigned their corresponding roles through application and role
-  assignment in Okta.
-* Via SSO, Users authenticate through Okta by using their Okta username,
+  assignment in Microsoft 365.
+* Via SSO, Users authenticate through Microsoft 365 by using their Microsoft 365 username,
   password, and MFA.
 * Upon successful authentication and MFA validation, users are logged into
   `{{companyShortName}}-master` using AWS Assume Role capability.
@@ -37,11 +37,11 @@ This is achieved with the following processes:
 
 **AWS CLI/SDK Access**
 
-* [Okta AWS-CLI Tool](https://github.com/oktadeveloper/okta-aws-cli-assume-role)
+* [Microsoft 365 AWS-CLI Tool](https://github.com/Microsoft 365developer/Microsoft 365-aws-cli-assume-role)
   is used to obtain temporary credentials (access keys) for developers to
   connect to AWS using the CLI or SDK.
-* By running the Okta AWS-CLI Tool, developers are prompted to authenticate to
-  Okta using their Okta credentials and MFA token/app.
+* By running the Microsoft 365 AWS-CLI Tool, developers are prompted to authenticate to
+  Microsoft 365 using their Microsoft 365 credentials and MFA token/app.
 * Upon successful authentication and MFA validation, a temporary access key and
   session token is inserted into the local configuration file (e.g.
   `~/.aws/credentials` and `~/.aws/config`).
@@ -86,13 +86,13 @@ designed to involve manual approval and provision process.
   approved by Head of Engineering and Security.
 * Upon approval of the support access PRODCM ticket, Security grants the
   requestor temporary access to by assigning the Support role to that particular
-  individual user in Okta.
+  individual user in Microsoft 365.
 * The Support role is protected by Dome9 with IAM Safety and it must be
   explicitly allowed by the Security team for it to assume the Support role in
   the target production environment.
 * By default, temporary Support access is limited to one hour.  This can be
   extended by the Security team.
-* The role assignment is removed from Okta immediately after the support session
+* The role assignment is removed from Microsoft 365 immediately after the support session
   and Dome9 IAM Safety is re-enabled.
 
 **Dual Control for Root Access**

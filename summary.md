@@ -158,7 +158,7 @@
 
 - **Standards for Access Provisioning**
 
-  _You need to be able describe how your access control is implemented.  For example, using role-based access control, unique account/ID for each user, automatic log on/log off, etc. These should match the configuration of your identity provider or access control system such as Okta._
+  _You need to be able describe how your access control is implemented.  For example, using role-based access control, unique account/ID for each user, automatic log on/log off, etc. These should match the configuration of your identity provider or access control system such as Microsoft 365._
 
 - **Password Management**
 
@@ -166,11 +166,11 @@
 
 - **Centralized Access Control and Single Sign On**
 
-  _Your organization most likely relies on multiple business applications to support its operations. This may include end-user systems, collaboration tools, development and production environments, etc. Managing access to all of your business applications and systems centrally ensures consistent access policy and auditing. Being a cloud-native organization, we highly recommend using a cloud-based identity provider, such as Okta, OneLogin, Google and others for centralized access control and single sign on._
+  _Your organization most likely relies on multiple business applications to support its operations. This may include end-user systems, collaboration tools, development and production environments, etc. Managing access to all of your business applications and systems centrally ensures consistent access policy and auditing. Being a cloud-native organization, we highly recommend using a cloud-based identity provider, such as Microsoft 365, OneLogin, Google and others for centralized access control and single sign on._
 
 - **Multi-factor Authentication**
 
-  _Passwords are hard to remember but easy to compromise. Even with long and complex passwords, it is no longer sufficient by itself as the only control to prevent unauthorized access to critical systems and data. Okta and other similar IdP vendors provide multi-factor authentication (MFA) capability as part of their offering, and it is very easy to enable especially if you already use it for single sign on._
+  _Passwords are hard to remember but easy to compromise. Even with long and complex passwords, it is no longer sufficient by itself as the only control to prevent unauthorized access to critical systems and data. Microsoft 365 and other similar IdP vendors provide multi-factor authentication (MFA) capability as part of their offering, and it is very easy to enable especially if you already use it for single sign on._
 
 - **Role Based Access Control (RBAC)**
 
@@ -187,7 +187,7 @@
 {{#needStandardHIPAA}}
 - **Access to PHI/ePHI**
 
-  _Access to PHI/ePHI should be limited to those with a business need only, and protected by strong access control and auditing. We recommend using a combination of the native AWS IAM policies and single sign on (e.g. Okta) for access enforcement. Additionally, an extra layer of protection may be added to restrict risky or privileged actions.  This can be implemented using Explicit Deny actions in the AWS IAM policies.  A tool like Dome9 can help automate that process._
+  _Access to PHI/ePHI should be limited to those with a business need only, and protected by strong access control and auditing. We recommend using a combination of the native AWS IAM policies and single sign on (e.g. Microsoft 365) for access enforcement. Additionally, an extra layer of protection may be added to restrict risky or privileged actions.  This can be implemented using Explicit Deny actions in the AWS IAM policies.  A tool like Dome9 can help automate that process._
 {{/needStandardHIPAA}}
 
 - **Platform Customer Access to Systems**
@@ -444,7 +444,7 @@
 
 - **Support and Management of BYOD Devices**
 
-  _You may not support bring-your-own-device (BYOD) for your employees.  If you do, a mobile device management (MDM) solution should be in place to properly manage them.  If you already use Okta as your IdP, they have a lightweight MDM solution you can enable from the same vendor. Alternatively, AirWatch or Jamf (Apple devices only) are also good solutions._
+  _You may not support bring-your-own-device (BYOD) for your employees.  If you do, a mobile device management (MDM) solution should be in place to properly manage them.  If you already use Microsoft 365 as your IdP, they have a lightweight MDM solution you can enable from the same vendor. Alternatively, AirWatch or Jamf (Apple devices only) are also good solutions._
 
 ## Business Continuity and Disaster Recovery
 
