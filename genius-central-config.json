@@ -496,7 +496,7 @@
       "file": "procedures/cp-ism-scope.md",
       "name": "Information Security Program and Scope",
       "type": "informational",
-      "provider": "JupiterOne",
+      "provider": "Genius Central",
       "summary": "The organization has an established security program with appropriate controls that are aligned to the organization's objectives and risk posture.",
       "guidance": "This describes the organization's information security program scope, high level controls, and program management processes.",
       "considerations": [
@@ -510,7 +510,7 @@
       "file": "procedures/cp-ism-policies.md",
       "name": "Understanding the Policies and Controls/Procedures",
       "type": "informational",
-      "provider": "JupiterOne",
+      "provider": "Genius Central",
       "summary": "The organization's security program maintains documentation of high level policies and lower level controls and procedures. The policies and procedures cover the design, development, implementation, operation, maintenance and monitoring of in-scope systems.",
       "guidance": "This describes how information security policies are structured.",
       "applicable": true,
@@ -521,7 +521,7 @@
       "file": "procedures/cp-ism-reporting.md",
       "name": "Review and Reporting",
       "type": "informational",
-      "provider": "JupiterOne",
+      "provider": "Genius Central",
       "summary": "Metrics are defined to measure the effectiveness of controls and they are reported to/reviewed by senior management.",
       "guidance": "This describes the key metrics and high level reporting process for the information security management program.",
       "applicable": true,
@@ -573,9 +573,9 @@
       "file": "procedures/cp-model-architecture.md",
       "name": "Security Architecture",
       "type": "technical",
-      "provider": "JupiterOne",
+      "provider": "Genius Central",
       "summary": "Security architecture is documented, including system and infrastructure security diagrams.",
-      "guidance": "A good security architecture is the starting point of a strong program foundation. You will need to maintain an up to date architecture diagram for security reviews with customers and auditors. JupiterOne can help automate the generation of network and application architecture diagrams in your cloud environments, so you don't have to spend time maintaining and updating it every time something changes.",
+      "guidance": "A good security architecture is the starting point of a strong program foundation. You will need to maintain an up to date architecture diagram for security reviews with customers and auditors. Genius Central can help automate the generation of network and application architecture diagrams in your cloud environments, so you don't have to spend time maintaining and updating it every time something changes.",
       "considerations": [
         "Which cloud service provider & corresponding products/services do you use?"
       ],
@@ -593,9 +593,9 @@
       "file": "procedures/cp-model-metrics.md",
       "name": "Metrics, Measurements and Continuous Monitoring",
       "type": "operational",
-      "provider": "JupiterOne",
+      "provider": "Genius Central",
       "summary": "Metrics are defined to measure the effectiveness of controls and they are continuously monitored.",
-      "guidance": "You will need to define a set of KPIs and metrics for monitoring and reporting on the effectiveness of the security controls. You can leverage JupiterOne's querying/reporting capability to automate the reporting process.",
+      "guidance": "You will need to define a set of KPIs and metrics for monitoring and reporting on the effectiveness of the security controls. You can leverage Genius Central's querying/reporting capability to automate the reporting process.",
       "considerations": [
         "How frequently will scorecards be produced?"
       ],
@@ -607,9 +607,9 @@
       "file": "procedures/cp-role-assignment.md",
       "name": "Assignment of Roles and the Security Committee",
       "type": "administrative",
-      "provider": "JupiterOne",
+      "provider": "Genius Central",
       "summary": "Security and compliance roles and responsibilities are clearly defined to ensure segregation of duties.",
-      "guidance": "Regulatory compliance frameworks, such as HIPAA, require formal assignment of security and privacy responsibilities to someone in your organization. As your organization expands and matures, you may want to form an executive level security committee to meet this requirement. Often, such a committee is a requirement of security certifications. You can manage this role assignment manually (I.E. in this documented policy/control procedure) or in the JupiterOne's app. Using JupiterOne, you can almost always avoid implementing a complicated enterprise GRC system.",
+      "guidance": "Regulatory compliance frameworks, such as HIPAA, require formal assignment of security and privacy responsibilities to someone in your organization. As your organization expands and matures, you may want to form an executive level security committee to meet this requirement. Often, such a committee is a requirement of security certifications. You can manage this role assignment manually (I.E. in this documented policy/control procedure) or in the Genius Central's app. Using Genius Central, you can almost always avoid implementing a complicated enterprise GRC system.",
       "considerations": [
         "What responsibilities will you commit to?"
       ],
@@ -621,9 +621,9 @@
       "file": "procedures/cp-training-policy.md",
       "name": "Policy and Compliance Training",
       "type": "administrative",
-      "provider": "JupiterOne",
+      "provider": "Genius Central",
       "summary": "Employees and contractors receive training on the organization's security policies and procedures.",
-      "guidance": "You will need to ensure all your employees are properly trained on the security policies and procedures. You may leverage a full featured learning management system (LMS) to develop, distribute, and track this training. JupiterOne also supports a simple process that allows your employees to access your security policies and procedures, and capture their acknowledgement.",
+      "guidance": "You will need to ensure all your employees are properly trained on the security policies and procedures. You may leverage a full featured learning management system (LMS) to develop, distribute, and track this training. Genius Central also supports a simple process that allows your employees to access your security policies and procedures, and capture their acknowledgement.",
       "considerations": [
         "What is your current employee training program for policies and compliance?",
         "What is your retention duration of materials?",
@@ -654,7 +654,7 @@
       "type": "administrative",
       "provider": "KnowBe4",
       "summary": "Employees and contractors working with patient data and protected health information (PHI) are required to take HIPAA awareness training within 30 days of onboarding and annually thereafter.",
-      "guidance": "If your organization is subject to HIPAA compliance, you must ensure all workforce members take a HIPAA awareness training annually. You may sign up with a vendor like Ataata to access training content, or alternatively, you may leverage an open-source training JupiterOne provides as a start.",
+      "guidance": "If your organization is subject to HIPAA compliance, you must ensure all workforce members take a HIPAA awareness training annually. You may sign up with a vendor like Ataata to access training content, or alternatively, you may leverage an open-source training Genius Central provides as a start.",
       "considerations": [
         "What tooling do you use for HIPAA or FISMA Awareness Training?",
         "What interval do employees to have to complete training?"
@@ -688,7 +688,7 @@
       "file": "procedures/cp-policy-framework.md",
       "name": "Policies and Controls Framework",
       "type": "administrative",
-      "provider": "JupiterOne",
+      "provider": "Genius Central",
       "summary": "The organization maintains a set of policies and controls that captures standards, regulatory, legal, and statutory requirements relevant to the business needs. The framework and its contents are reviewed at least annually.",
       "guidance": "There should be a defined structure to maintain policies and controls. A process and/or governance tooling should be implemented to manage the policies, standards, and controls applicable to the organization and its business.",
       "applicable": true,
