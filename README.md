@@ -30,7 +30,7 @@ You will be prompted to save the config to a file, which you can reference the
 next time you'd like to rebuild the policies and procedures:
 
 ```bash
-psp build -t ./templates -c path/to/your/config.json
+psp build -t ./templates -c genius-central-config.json
 ```
 
 The result files are put in `./docs` (Markdown) and `./site` (HTML).
