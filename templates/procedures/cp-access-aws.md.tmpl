@@ -53,27 +53,22 @@ This is achieved with the following processes:
 
 **IAM Safety**
 
-* {{companyShortName}} implements **Dome9** to monitor and protect its AWS environments.
-  Dome9 provides an additional layer of defense on top of native IAM policies
-  called **IAM Safety**.
-* IAM Safety works by defining a set of risky actions, such as adding/remove IAM
+* {{companyShortName}} implements **AWS Security Hub** to monitor and protect its AWS environments.
+* AWS Access Analyzer works by defining a set of risky actions, such as adding/remove IAM
   users to an **Explicit Deny** policy.  The policy is attached to an IAM Group,
   and protected Users and/or Roles are assigned to this Group.
 * Because explicit deny rules always take precedence in AWS IAM policy, this
   effectively restricts access and prohibits execution of the risky actions as
   defined in the policy, even if the user/role may have administrative
   privilege.
-* Original access can be temporarily restored through the Dome9 web console or
-  its mobile app.
+* Original access can be temporarily restored through Azure Active Directory.
 * Privilege Roles, such as Security role in master account and Administrator
   role in production account, are protected by IAM Safety.
-* Additional details can be found on [Dome9's product
-  documentation](https://dome9-security.atlassian.net/wiki/spaces/DG/pages/2981893/IAM+Safety+Overview).
 
 **Troubleshooting / Support Access**
 
-In normal operations, troubleshooting is performed with log analysis in Sumo
-Logic, outside of the production environments in AWS. A separate Support role is
+In normal operations, troubleshooting is performed with log analysis in DataDog,
+outside of the production environments in AWS. A separate Support role is
 created for temporary troubleshooting and support access when log access is
 insufficient to determine the cause. Support access should be minimized and is
 designed to involve manual approval and provision process.
@@ -87,13 +82,12 @@ designed to involve manual approval and provision process.
 * Upon approval of the support access PRODCM ticket, Security grants the
   requestor temporary access to by assigning the Support role to that particular
   individual user in Microsoft 365.
-* The Support role is protected by Dome9 with IAM Safety and it must be
+* The Support role is protected by Azure Active Directory and it must be
   explicitly allowed by the Security team for it to assume the Support role in
   the target production environment.
 * By default, temporary Support access is limited to one hour.  This can be
   extended by the Security team.
-* The role assignment is removed from Microsoft 365 immediately after the support session
-  and Dome9 IAM Safety is re-enabled.
+* The role assignment is removed from Microsoft 365 immediately after the support session.
 
 **Dual Control for Root Access**
 

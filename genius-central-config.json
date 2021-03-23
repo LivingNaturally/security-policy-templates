@@ -1180,7 +1180,7 @@
       "file": "procedures/cp-access-vpn.md",
       "name": "VPN Remote Access",
       "type": "technical",
-      "provider": "Pritunl",
+      "provider": "AWS VPN",
       "function": "VPN",
       "summary": "Remote access to private and internal systems are configured via encrypted VPN channels.",
       "guidance": "Remote access is typically secured via VPN. This could be implemented as a EC2 instance running in your private subnet/VPC instead AWS, or a server on whatever private network in your hosted or internal environment. Pritunl is a lightweight, OpenVPN based solution that is free to start, and can scale as you grow. WireGuard is a good open-source option as well.",
