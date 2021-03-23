@@ -31,9 +31,12 @@ next time you'd like to rebuild the policies and procedures:
 
 ```bash
 psp build -t ./templates -c genius-central-config.json
+# Pre-requisite `pip install mkdocs mkdocs-material mkdocs-with-pdf`
+#    https://weasyprint.readthedocs.io/en/latest/install.html#windows
+mkdocs build
 ```
 
-The result files are put in `./docs` (Markdown) and `./site` (HTML).
+The result files are put in `./docs` (Markdown) `./site` (HTML) `/site/pdf/document.pdf` (PDF).
 
 **IMPORTANT:** To edit the policies and procedures, use the template files in
 `./templates` and re-run the `psp build` command. Do _not_ edit the `./docs` and

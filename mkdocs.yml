@@ -1,6 +1,7 @@
 site_name: 'Genius Central Security PSP'
 site_description: 'Genius Central Security Policies, Standards, and Procedures'
 site_url: 'https://geniuscentral.com/security'
+site_author: 'Genius Central Systems, Inc.'
 
 theme:
   name: material
@@ -15,6 +16,9 @@ theme:
 # Enable custom.css
 extra_css:
   - 'assets/css/custom.css'
+
+plugins:
+    - with-pdf
 
 markdown_extensions:
   - smarty
