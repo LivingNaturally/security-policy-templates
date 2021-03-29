@@ -699,7 +699,7 @@
       "file": "procedures/cp-policy-mgmt.md",
       "name": "Policy Management Process",
       "type": "administrative",
-      "provider": "JupiterOne",
+      "provider": "AWS SecurityHub",
       "summary": "A formal process is in place to maintain and update security policies, controls and procedures. Policies, controls and procedures are reviewed at least annually.",
       "guidance": "Your security policies and procedures are living documents.  They should be reviewed, updated, and distributed on a regular basis.  Our recommendation is to manage policy as code (e.g. as a git repo), and this procedure provides the details on how to do that.",
       "considerations": [
@@ -830,7 +830,7 @@
       "file": "procedures/cp-compliance-monitor.md",
       "name": "Continuous Compliance Monitoring",
       "type": "administrative",
-      "provider": "JupiterOne",
+      "provider": "AWS SecurityHub",
       "summary": "Compliance status is tracked and monitored using an enterprise compliance tool.",
       "guidance": "You should implement a mechanism to track the status of regulatory compliance. This can be done using the JupiterOne compliance app instead of manually tracking.",
       "applicable": true,
@@ -908,7 +908,7 @@
       "file": "procedures/cp-audit-control-deficiency.md",
       "name": "Remediation of Control Deficiencies",
       "type": "administrative",
-      "provider": "JupiterOne",
+      "provider": "Jira",
       "summary": "Identified control deficiencies are communicated to parties responsible for taking corrective action. Remediation plans are proposed and monitored through resolution.",
       "guidance": "Control deficiencies must be reviewed, prioritized, and mitigated.",
       "applicable": true,
@@ -1447,7 +1447,7 @@
       "file": "procedures/cp-asset-physical.md",
       "name": "Physical Asset Inventory",
       "type": "technical",
-      "provider": "JupiterOne",
+      "provider": "NetSuite",
       "function": [
         "inventory",
         "ITAM"
@@ -1903,7 +1903,7 @@
       "file": "procedures/cp-ccm-monitor.md",
       "name": "Configuration Monitoring and Auditing",
       "type": "technical",
-      "provider": "JupiterOne",
+      "provider": "AWS CloudTrail",
       "function": [
         "config-monitoring",
         "config-auditing",
@@ -2186,7 +2186,7 @@
       "file": "procedures/cp-threat-siem.md",
       "name": "Centralized Security Information and Event Management",
       "type": "technical",
-      "provider": "JupiterOne",
+      "provider": "AWS SecurityHub",
       "function": "SIEM",
       "summary": "Security events are logged and alerts are centrally aggregated for review and remediation.",
       "guidance": "JupiterOne provides excellent automated event analysis and alerting capability out of box. You may also choose to implement a centralized log management and/or security information and event management (SIEM) solution such as Splunk or Sumo Logic.",
