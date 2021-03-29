@@ -34,6 +34,8 @@ psp build -t ./templates -c genius-central-config.json
 # Pre-requisite `pip install mkdocs mkdocs-material mkdocs-with-pdf`
 #    https://weasyprint.readthedocs.io/en/latest/install.html#windows
 mkdocs build
+# Convert to word document
+pandoc -s -o docs/policies.docx docs/index.md docs/program.md docs/corp-gov.md docs/policy-mgmt.md docs/model.md docs/rar.md docs/risk-mgmt.md docs/compliance-audit.md docs/system-audit.md docs/hr.md docs/access.md docs/facility.md docs/asset-mgmt.md docs/data-mgmt.md docs/data-protection.md docs/sdlc.md docs/ccm.md docs/threat.md docs/vuln-mgmt.md docs/mdm.md docs/bcdr.md docs/ir.md docs/breach.md docs/vendor.md docs/privacy.md docs/ref.md docs/employee-handbook.md docs/approved-software.md docs/approved-vendors.md docs/definitions.md docs/privacy-policy.md docs/cookie-policy.md docs/gdpr-dpa.md
 ```
 
 The result files are put in `./docs` (Markdown) `./site` (HTML) `/site/pdf/document.pdf` (PDF).

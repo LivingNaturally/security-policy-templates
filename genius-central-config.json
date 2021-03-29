@@ -29,8 +29,8 @@
     "ticketingSystem": "Jira",
     "internalHelpdeskURL": "",
     "cmPortal": "https://livnat.atlassian.net/",
-    "ciSystem": "TriNet",
-    "hrSystem": "",
+    "ciSystem": "Octopus",
+    "hrSystem": "TriNet",
     "supportBYODandMDM": false,
     "haveSecurityScorecard": false,
     "securityScorecardPeriod": "none",
@@ -1935,7 +1935,7 @@
       "file": "procedures/cp-ccm-aws.md",
       "name": "Provisioning AWS Accounts",
       "type": "technical",
-      "provider": "Terraform",
+      "provider": "CloudFormation",
       "function": "provisioning",
       "scope": "aws",
       "summary": "AWS configuration is maintained as code and provisioned via automated code deploys.",
@@ -1959,15 +1959,15 @@
       "considerations": [
         "Which cloud service provider do you use?"
       ],
-      "applicable": true,
-      "adopted": true
+      "applicable": false,
+      "adopted": false
     },
     {
       "id": "cp-ccm-patch",
       "file": "procedures/cp-ccm-patch.md",
       "name": "Patch Management Procedures",
       "type": "technical",
-      "provider": "OS auto-update",
+      "provider": "AWS Systems Manager",
       "function": "patch-management",
       "summary": "Operating systems on both end-user computing devices and server systems are required to maintain up-to-date security patches in an automated process.",
       "guidance": "The simplest way to ensure your end-user systems are patched is to enable auto-update.  You can use the same configuration compliance audit agent to ensure auto-update is turned on for all systems (Windows, macOS, Linux) in your environment. Additionally, for systems in AWS, the recommended solution is - don't patch, replace. Have a process to update your AMIs to the latest version when it's made available, and/or regularly update the AMIs approved to use in your production environment and ensure the new EC2 instances always use the latest approved AMIs.",
@@ -2076,7 +2076,7 @@
       "name": "Host Intrusion Detection",
       "type": "technical",
       "function": "HIDS",
-      "provider": "AWS Inspector and Carbon Black PSC",
+      "provider": "AWS Inspector",
       "summary": "Host instrusion detection and malicious activity monitoring agents are installed on endpoint hosts and servers.",
       "guidance": "AWS Inspector is a native offering that covers vulnerability scanning of EC2 instances. For agent-based host intrusion detection, we recommend OSSEC agents as a basic open-source based solution. OSSEC supports a variety of operating systems both in the cloud and on-premise. A commercial solution may be needed for Docker containers activity monitoring. For Windows and macOS end-user systems, Carbon Black Cb Defense or SentinelOne are both good next-generation endpoint protection solutions that cover intrusion detection/prevention via advanced behavior analysis as well as malware protection.",
       "considerations": [
@@ -2091,9 +2091,9 @@
       "name": "Network Intrusion Detection",
       "type": "technical",
       "function": "NIDS",
-      "provider": "AWS GuardDuty and Cisco Meraki",
+      "provider": "AWS GuardDuty",
       "summary": "Network layer intrusion detection system is implemented.",
-      "guidance": "AWS GuardDuty analyzes VPC flow logs, DNS logs, and CloudTrail logs for intrusion detection and threat monitoring at both the network and API layer. If you operate an internal on-premise network or your own data center, a network intrusion detection system is a must. Cisco Meraki has a basic intrusion detection capability that can be a good starting solution.",
+      "guidance": "AWS GuardDuty analyzes VPC flow logs, DNS logs, and CloudTrail logs for intrusion detection and threat monitoring at both the network and API layer. If you operate an internal on-premise network or your own data center, a network intrusion detection system is a must.",
       "considerations": [
         "What tooling do you use for intrusion detection on-premise?",
         "What tooling do you use for intrusion detection in the cloud?"
@@ -2106,7 +2106,7 @@
       "file": "procedures/cp-threat-malware.md",
       "name": "Malware Protection",
       "type": "technical",
-      "provider": "Carbon Black PSC",
+      "provider": "Windows Defender",
       "function": "AV",
       "summary": "Malware protection agent is installed and activated at all times on endpoint devices.",
       "guidance": "Anti-malware continue to be a compliance requirement, although traditional AV solutions have been proven to be ineffective against zero-day attacks and advanced malware. Modern operating systems usually come with some basic malware defense capability, such as Windows Defender. You may also consider something like ClamAV as a free, open-source solution to meet compliance needs. But for real security, we highly recommend a next generation endpoint protection solution such as Carbon Black Cb Defense or SentinelOne.",
@@ -2215,7 +2215,7 @@
       "file": "procedures/cp-vuln-remediation.md",
       "name": "Security Findings Reporting, Tracking and Remediation",
       "type": "technical",
-      "provider": "JupiterOne",
+      "provider": "AWS SecurityHub",
       "function": "vulnerability-management",
       "summary": "All security vulnerability and findings (for both infrastructure and software) are prioritized and remediated based on its severity and impact, with a defined SLA.",
       "guidance": "Vulnerability findings can come from a variety of sources, such as open source dependency scanning, static application code analysis, dynamic application security testing, penetration testing, infrastructure vulnerability scanning, etc. Tracking the vulnerabilities and ensuring they are remediated in a timely manner can be an exhausting task if handled manually. JupiterOne can connect to the various vulnerability sources and help manage them in a consistent and automated manner. The vulnerability management program, including the detailed process and SLA levels, should be well defined.",
@@ -2250,7 +2250,7 @@
       "file": "procedures/cp-mdm-usb.md",
       "name": "Use of USB Flash Drive and External Storage Device",
       "type": "technical",
-      "provider": "IronKey",
+      "provider": "manual process",
       "function": "MDM",
       "summary": "Use of USB flash drive or similar removable storage device to store sensitive and critical data is prohibited and must be handled on an exception basis approved by security.",
       "guidance": "If removable media, such as USB flash drives, must be used to store sensitive data, security precautions must be taken. IronKey or similar devices that support hardware encryption is a good choice. However, it is much better to not to store any sensitive data on removable media devices to start with.",
@@ -2273,8 +2273,8 @@
         "What tooling is used for endpoint device management?",
         "Is BYOD allowed?"
       ],
-      "applicable": true,
-      "adopted": true
+      "applicable": false,
+      "adopted": false
     },
     {
       "id": "cp-bcdr",
@@ -2606,8 +2606,8 @@
       "considerations": [
         "Is your organization subject to HIPAA compliance? If not, remove/replace."
       ],
-      "applicable": true,
-      "adopted": true
+      "applicable": false,
+      "adopted": false
     },
     {
       "id": "ref-hipaa-mapping",
@@ -2616,8 +2616,8 @@
       "considerations": [
         "Is your organization subject to HIPAA compliance? If not, remove/replace."
       ],
-      "applicable": true,
-      "adopted": true
+      "applicable": false,
+      "adopted": false
     },
     {
       "id": "ref-nist-mapping",
@@ -2626,8 +2626,8 @@
       "considerations": [
         "Is your organization subject to NIST compliance? If not, remove/replace."
       ],
-      "applicable": true,
-      "adopted": true
+      "applicable": false,
+      "adopted": false
     },
     {
       "id": "ref-privacy-policy",
