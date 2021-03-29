@@ -18,7 +18,8 @@ extra_css:
   - 'assets/css/custom.css'
 
 plugins:
-    - with-pdf
+  - search
+  - with-pdf
 
 markdown_extensions:
   - smarty
