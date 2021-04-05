@@ -1789,8 +1789,8 @@
       "considerations": [
         "What tooling do you use to manage code dependencies and FOSS?"
       ],
-      "applicable": true,
-      "adopted": true
+      "applicable": false,
+      "adopted": false
     },
     {
       "id": "cp-sdlc-sast",
@@ -1804,8 +1804,8 @@
       "considerations": [
         "What tooling do you use for SAST?"
       ],
-      "applicable": true,
-      "adopted": true
+      "applicable": false,
+      "adopted": false
     },
     {
       "id": "cp-sdlc-dast",
@@ -1819,8 +1819,8 @@
       "considerations": [
         "What tooling do you use for DAST?"
       ],
-      "applicable": true,
-      "adopted": true
+      "applicable": false,
+      "adopted": false
     },
     {
       "id": "cp-sdlc-pentest",
@@ -1846,8 +1846,8 @@
       "considerations": [
         "What tooling do you use for a Bug Bounty Program?"
       ],
-      "applicable": true,
-      "adopted": true
+      "applicable": false,
+      "adopted": false
     },
     {
       "id": "cp-sdlc-hipaa",
@@ -1860,15 +1860,15 @@
       "considerations": [
         "Is your organization subject to regulatory compliance such as HIPAA or FISMA?"
       ],
-      "applicable": true,
-      "adopted": true
+      "applicable": false,
+      "adopted": false
     },
     {
       "id": "cp-sdlc-monitor",
       "file": "procedures/cp-sdlc-monitor.md",
       "name": "Production System Monitoring, Incident Management, and Paging",
       "type": "operational",
-      "provider": "PagerDuty",
+      "provider": "Slack",
       "function": [
         "incident-management",
         "paging"
