@@ -1247,7 +1247,7 @@
       "file": "procedures/cp-access-service.md",
       "name": "Service Accounts",
       "type": "technical",
-      "provider": "AWS IAM and Terraform",
+      "provider": "AWS IAM and CloudFormation",
       "function": ["IAM", "PAM", "secret-management"],
       "summary": "Service accounts and application credentials are securely managed.",
       "guidance": "In AWS, access given to application services and components are achieved using IAM roles, policies, and assume-role capability. The provisioning of such access should be managed as code.  We find it simple and flexible to use Terraform to describe and provision infrastructure-as-code.",

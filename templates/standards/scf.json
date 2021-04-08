@@ -4043,8 +4043,8 @@
         },
         {
           "ref": "PRI-01.1",
-          "title": "Chief Privacy Officer (CPO)",
-          "summary": "Mechanisms exist to appoints a Chief Privacy Officer (CPO) or similar role, with the authority, mission, accountability and resources to coordinate, develop and implement, applicable privacy controls and manage privacy risks through the organization-wide privacy program.",
+          "title": "Chief Security Officer (CSO)",
+          "summary": "Mechanisms exist to appoints a Chief Security Officer (CSO) or similar role, with the authority, mission, accountability and resources to coordinate, develop and implement, applicable privacy controls and manage privacy risks through the organization-wide privacy program.",
           "applicable": true
         },
         {
@@ -4056,7 +4056,7 @@
         {
           "ref": "PRI-01.3",
           "title": "Dissemination of Privacy Program Information",
-          "summary": "Mechanisms exist to: \r\n ▪ Ensure that the public has access to information about organizational privacy activities and can communicate with its Chief Privacy Officer (CPO) or similar role;\r\n ▪ Ensure that organizational privacy practices are publicly available through organizational websites or otherwise; and\r\n ▪ Utilize publicly facing email addresses and/or phone lines to enable the public to provide feedback and/or direct questions to privacy offices regarding privacy practices.",
+          "summary": "Mechanisms exist to: \r\n ▪ Ensure that the public has access to information about organizational privacy activities and can communicate with its Chief Security Officer (CSO) or similar role;\r\n ▪ Ensure that organizational privacy practices are publicly available through organizational websites or otherwise; and\r\n ▪ Utilize publicly facing email addresses and/or phone lines to enable the public to provide feedback and/or direct questions to privacy offices regarding privacy practices.",
           "applicable": true
         },
         {

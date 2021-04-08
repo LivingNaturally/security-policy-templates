@@ -5,7 +5,7 @@
     "companyEmailDomain": "geniuscentral.com",
     "companyWebsiteURL": "https://www.geniuscentral.com",
     "companyMailingAddress": "2025 Lakewood Ranch Blvd Suite 202, Bradenton FL 34211",
-    "companyOverview": "",
+    "companyOverview": "Providing effective, affordable supply chain solutions for retailers and suppliers in the natural product industry, empowering our clients with the tools they need to thrive and better compete in the marketplace.",
     "contactPhoneNumber": "(800) 360-2231",
     "ceoName": "Kirsten Hogan",
     "ceoEmail": "khogan@geniuscentral.com",
@@ -22,9 +22,9 @@
     "mkdocsLogoURL": "",
     "mkdocsThemeColorPrimary": "",
     "mkdocsThemeColorAccent": "",
-    "securityPolicyURL": "https://geniuscentral.com/security",
-    "privacyPolicyURL": "https://geniuscentral.com/cookie-policy",
-    "cookiePolicyURL": "",
+    "securityPolicyURL": "https://geniuscentral.com/policies",
+    "privacyPolicyURL": "https://geniuscentral.com/policies/privacy-policy",
+    "cookiePolicyURL": "https://geniuscentral.com/policies/cookie-policy",
     "sourceControl": "GitHub",
     "ticketingSystem": "Jira",
     "internalHelpdeskURL": "",
@@ -47,6 +47,7 @@
     "needStandardGDPR": false,
     "needStandardNIST": false,
     "needStandardPCI": false,
+    "needWhistleblower": false,
     "isServiceProvider": false,
     "isHIPAACoveredEntity": false,
     "isHIPAABusinessAssociate": false,
@@ -250,7 +251,6 @@
         "cp-employee-onboarding",
         "cp-employee-exiting",
         "cp-employee-escalation",
-        "cp-employee-whistleblower",
         "cp-employee-performance",
         "cp-employee-recognition",
         "cp-employee-development",
@@ -483,10 +483,7 @@
         "ref-approved-vendors",
         "ref-cookie-policy",
         "ref-privacy-policy",
-        "ref-hipaa-baa",
-        "ref-gdpr-dpa",
-        "ref-hipaa-mapping",
-        "ref-nist-mapping"
+        "ref-gdpr-dpa"
       ]
     }
   ],
@@ -1063,8 +1060,8 @@
       "provider": "manual process",
       "summary": "Employees are provided a safe channel and process to report concerns and violations with respect to standards of business and personal ethics and conduct.",
       "guidance": "Your organization should define policies and procedures to ensure a proper channel is established for reporting concerns and violations with respect to standards of business and personal ethics and conduct.",
-      "applicable": true,
-      "adopted": true
+      "applicable": false,
+      "adopted": false
     },
     {
       "id": "cp-employee-performance",
@@ -1259,7 +1256,7 @@
         "secret-management"
       ],
       "summary": "Service accounts and application credentials are securely managed.",
-      "guidance": "In AWS, access given to application services and components are achieved using IAM roles, policies, and assume-role capability. The provisioning of such access should be managed as code.  We find it simple and flexible to use Terraform to describe and provision infrastructure-as-code.",
+      "guidance": "In AWS, access given to application services and components are achieved using IAM roles, policies, and assume-role capability. The provisioning of such access should be managed as code.  We find it simple and flexible to use Infrastructure as Code to describe and provision infrastructure-as-code.",
       "considerations": [
         "What tooling is used for service accounts?"
       ],
@@ -1939,7 +1936,7 @@
       "function": "provisioning",
       "scope": "aws",
       "summary": "AWS configuration is maintained as code and provisioned via automated code deploys.",
-      "guidance": "Your cloud environment should be configured using multiple types of software-defined boundaries. The cloud infrastructure should be provisioned and managed as code. In AWS, this can be done via CloudFormation. However, our recommendation is to use Terraform. We find Terraform more flexible and it supports multiple cloud service providers including AWS, Azure, and GCP.",
+      "guidance": "Your cloud environment should be configured using multiple types of software-defined boundaries. The cloud infrastructure should be provisioned and managed as code. In AWS, this can be done via CloudFormation.",
       "considerations": [
         "Which cloud service provider do you use?"
       ],

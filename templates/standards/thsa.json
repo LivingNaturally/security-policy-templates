@@ -924,8 +924,8 @@
         },
         {
           "ref": "PRI-01.1",
-          "title": "Chief Privacy Officer (CPO)",
-          "summary": "Does the organization appoints a Chief Privacy Officer (CPO) or similar role, with the authority, mission, accountability and resources to coordinate, develop and implement, applicable privacy requirements and manage privacy risks through the organization-wide privacy program?"
+          "title": "Chief Security Officer (CSO)",
+          "summary": "Does the organization appoints a Chief Security Officer (CSO) or similar role, with the authority, mission, accountability and resources to coordinate, develop and implement, applicable privacy requirements and manage privacy risks through the organization-wide privacy program?"
         },
         {
           "ref": "PRI-02",
