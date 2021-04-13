@@ -21,29 +21,27 @@ as defined in [Configuration and Change Management document](ccm.md).
 
 #### Customer/Production Data Protection
 
-{{companyShortName}} hosts on Amazon Web Services in the US-East (Ohio) region by default.
-Data is replicated across multiple regions for redundancy and disaster recovery.
+{{companyShortName}} hosts on Amazon Web Services in the US-East region by default.
+Data is replicated across multiple availability zones for redundancy and disaster recovery.
 
 All {{companyShortName}} employees, systems, and resources adhere to the following standards
 and processes to reduce the risk of compromise of Production Data:
 
 1. Implement and/or review controls designed to protect Production Data from
    improper alteration or destruction.
-2. Ensure that confidential data is stored in a manner that supports user access
+1. Ensure that confidential data is stored in a manner that supports user access
    logs and automated monitoring for potential security incidents.
-3. Ensure {{companyShortName}} Customer Production Data is segmented and only accessible to
+1. Ensure {{companyShortName}} Customer Production Data is segmented and only accessible to
    Customer authorized to access data.
-4. All Production Data at rest is stored on encrypted volumes using encryption
+1. All Production Data at rest is stored on encrypted volumes using encryption
    keys managed by {{companyShortName}}. Encryption at rest is ensured through the use of
    automated deployment scripts referenced in [Configuration and Change Management](ccm.md).
-5. Volume encryption keys and machines that generate volume encryption keys are
+1. Volume encryption keys and machines that generate volume encryption keys are
    protected from unauthorized access. Volume encryption key material is
    protected with access controls such that the key material is only accessible
    by privileged accounts.
-6. Encrypted volumes use approved cipher algorithms, key strength, and key
+1. Encrypted volumes use approved cipher algorithms, key strength, and key
    management process as defined in §12.3.1 above.
-7. Raid volume drives are individually encrypted and assembled on boot requiring
-   a manual input of the key to mount the encrypted volume.
 
 #### Access
 
@@ -77,7 +75,3 @@ for major services when further support is necessary.
 {{companyShortName}} uses a security agent to monitor production systems. The
 agents monitor system activities, generate alerts on suspicious activities and
 report on vulnerability findings to a centralized management console.
-
-The security agent is installed on all on premise Linux servers. It is also
-built into Amazon Machine Images (AMIs) for use in {{companyShortName}} AWS
-environments.
