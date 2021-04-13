@@ -251,6 +251,7 @@
         "cp-employee-onboarding",
         "cp-employee-exiting",
         "cp-employee-escalation",
+        "cp-employee-whistleblower",
         "cp-employee-performance",
         "cp-employee-recognition",
         "cp-employee-development",
@@ -483,7 +484,10 @@
         "ref-approved-vendors",
         "ref-cookie-policy",
         "ref-privacy-policy",
-        "ref-gdpr-dpa"
+        "ref-hipaa-baa",
+        "ref-gdpr-dpa",
+        "ref-hipaa-mapping",
+        "ref-nist-mapping"
       ]
     }
   ],
