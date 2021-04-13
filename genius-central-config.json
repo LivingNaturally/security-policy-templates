@@ -766,15 +766,15 @@
       "provider": "JupiterOne",
       "summary": "Risks identified from each risk assessment are documented and maintained.",
       "guidance": "In many cases, the risk registry is no more than a spreadsheet that serves as the inventory of risks identified as part of each risk assessment. Most mature enterprises implement a Governance, Risk and Compliance (GRC) solution to manage this process.  However, a full blown GRC solution is complex and often overkill for a SaaS company.  Instead, use JupiterOne to inventory and track your risks.",
-      "applicable": true,
-      "adopted": true
+      "applicable": false,
+      "adopted": false
     },
     {
       "id": "cp-risk-insurance",
       "file": "procedures/cp-risk-insurance.md",
       "name": "Cyber Liability Insurance",
       "type": "administrative",
-      "provider": "",
+      "provider": "Acord",
       "summary": "The organization holds cyber liability insurance with sufficient coverage based on its risk profile",
       "guidance": "Many organizations require their vendor/supplier to have cyber liability insurance to cover damage from potential incidents and breaches. You should always consider insurance as a risk transfer mechanism to offset the financial impact of a risk materializing.",
       "considerations": [
@@ -791,15 +791,15 @@
       "provider": "",
       "summary": "The organization considers both financial and IT fraud risks as part of its risk assessment process, including the pressures/incentives, opportunities and rationalities of people and/or department to commit fraud.",
       "guidance": "Many organizations require their vendor/supplier to have cyber liability insurance to cover damage from potential incidents and breaches. You should always consider insurance as a risk transfer mechanism to offset the financial impact of a risk materializing.",
-      "applicable": true,
-      "adopted": true
+      "applicable": false,
+      "adopted": false
     },
     {
       "id": "cp-compliance-mgmt",
       "file": "procedures/cp-compliance-mgmt.md",
       "name": "Compliance Program Management",
       "type": "administrative",
-      "provider": "JupiterOne",
+      "provider": "",
       "summary": "The organization has a program and defined process to manage compliance to applicable regulatory requirements and contractual obligations.",
       "guidance": "Your organization needs to define and document a process to identify and ensure compliance with applicable statutory, regulatory, and contractual requirements.",
       "applicable": true,
@@ -810,7 +810,7 @@
       "file": "procedures/cp-compliance-requests.md",
       "name": "Requesting Audit and Compliance Reports",
       "type": "administrative",
-      "provider": "JupiterOne",
+      "provider": "",
       "summary": "Process and channels are established to communicate the compliance status to external stakeholders.",
       "guidance": "You should have a pre-defined process for external entities to request audit and compliance reports.",
       "considerations": [
@@ -969,15 +969,15 @@
       "provider": "",
       "summary": "Employees and contractors are informed and trained on the organization's monitoring and auditing process.",
       "guidance": "Workforce members (and customers, if applicable) shall be informed and trained on the system auditing processes.",
-      "applicable": true,
-      "adopted": true
+      "applicable": false,
+      "adopted": false
     },
     {
       "id": "cp-hr-mgmt",
       "file": "procedures/cp-hr-mgmt.md",
       "name": "HR Management and Reporting",
       "type": "administrative",
-      "provider": "EaseCentral",
+      "provider": "TriNet",
       "summary": "Organizational structure as well as individual job functions are established and communicated to all employees.",
       "guidance": "",
       "considerations": [
@@ -1005,8 +1005,8 @@
       "provider": "manual process",
       "summary": "Interviews and background checks are conducted prior to hiring to ensure qualification and security.",
       "guidance": "Background checks should be conducted as part of the hiring process, prior to an employee/contractor starting.",
-      "applicable": true,
-      "adopted": true
+      "applicable": false,
+      "adopted": false
     },
     {
       "id": "cp-employee-onboarding",
@@ -1074,8 +1074,8 @@
       "considerations": [
         "What is your employee performance review process?"
       ],
-      "applicable": true,
-      "adopted": true
+      "applicable": false,
+      "adopted": false
     },
     {
       "id": "cp-employee-recognition",
@@ -1199,8 +1199,8 @@
       "considerations": [
         "Do you store any sensitive data such as PII, PHI, or credit card/financial data?"
       ],
-      "applicable": true,
-      "adopted": true
+      "applicable": false,
+      "adopted": false
     },
     {
       "id": "cp-access-customer",
@@ -1241,8 +1241,8 @@
       "function": "PAM",
       "summary": "Privileged access to production systems and/or data must be requested, reviewed, and approved each time. Privileged access is granted on a temporary basis, typically no more than 24 hours.",
       "guidance": "A privileged user is someone who has administrative access to critical systems or data. This type of access should be highly restricted and managed with a more controlled process than typical/non-privileged user access. There are security solutions dedicated to privileged access management. However, you might not need to purchase and implement a separate tool if you follow our recommended procedure using cloud-native SSO, AWS IAM, enable IAM policy guard rails and leverage explicit Deny rules in certain policies.",
-      "applicable": true,
-      "adopted": true
+      "applicable": false,
+      "adopted": false
     },
     {
       "id": "cp-access-service",
@@ -1280,7 +1280,7 @@
       "file": "procedures/cp-access-standards.md",
       "name": "Standards for Access Provisioning",
       "type": "technical",
-      "provider": "Microsoft 365",
+      "provider": "AWS Cognito",
       "summary": "The organization incorporates security best practices and standards for provisioning access including unique user identification, automatic logoff, and least-privileged access.",
       "guidance": "You need to be able describe how your access control is implemented.  For example, using role-based access control, unique account/ID for each user, automatic log on/log off, etc. These should match the configuration of your identity provider or access control system such as Microsoft 365.",
       "considerations": [
@@ -1318,8 +1318,8 @@
       ],
       "summary": "Office networks, including wireless access, are protected for internal business use only. Guest wireless access is provided on a separate logical network.",
       "guidance": "Network access should be protected for your internal/office environments, especially wireless access. We highly recommended not building physical walls around your critical/production data and leveraging cloud instead.  Therefore, there should be no critical/production system or data on your office networks. This greatly reduces risk in your internal user environments. You still should have proper encryption for your wireless network.  This can be done using something like Cisco Meraki, which provides API access for you to integrate with JupiterOne, or something as simple as Google Wifi.",
-      "applicable": true,
-      "adopted": true
+      "applicable": false,
+      "adopted": false
     },
     {
       "id": "cp-access-password",

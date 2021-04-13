@@ -37,10 +37,10 @@ This is achieved with the following processes:
 
 **AWS CLI/SDK Access**
 
-* [Microsoft 365 AWS-CLI Tool](https://github.com/Microsoft 365developer/Microsoft 365-aws-cli-assume-role)
+* [aws-azure-login](https://github.com/sportradar/aws-azure-login)
   is used to obtain temporary credentials (access keys) for developers to
   connect to AWS using the CLI or SDK.
-* By running the Microsoft 365 AWS-CLI Tool, developers are prompted to authenticate to
+* By running the aws-azure-login, developers are prompted to authenticate to
   Microsoft 365 using their Microsoft 365 credentials and MFA token/app.
 * Upon successful authentication and MFA validation, a temporary access key and
   session token is inserted into the local configuration file (e.g.
@@ -88,7 +88,7 @@ designed to involve manual approval and provision process.
 * By default, temporary Support access is limited to one hour.  This can be
   extended by the Security team.
 * The role assignment is removed from Microsoft 365 immediately after the support session.
-
+<!--
 **Dual Control for Root Access**
 
 {{companyShortName}} implements a Dual Control / Split Knowledge process to protect the Root
@@ -114,3 +114,4 @@ user access to our AWS accounts. The process works as follow:
 When root access is required for business or operational needs, a {{ticketingSystem}} Issue is
 created that requires the Security Lead and Engineering Lead to jointly perform
 the action.
+-->
