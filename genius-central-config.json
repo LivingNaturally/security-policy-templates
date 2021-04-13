@@ -1537,8 +1537,8 @@
       "considerations": [
         "What are your company/systems data repositories?"
       ],
-      "applicable": true,
-      "adopted": true
+      "applicable": false,
+      "adopted": false
     },
     {
       "id": "cp-data-backup",
@@ -1575,8 +1575,8 @@
         "How long do you retain customer data after they leave?",
         "Do you store any sensitive data such as PII, PHI, or credit card/financial data?"
       ],
-      "applicable": true,
-      "adopted": true,
+      "applicable": false,
+      "adopted": false,
       "resources": [
         {
           "name": "shred - instructions",
