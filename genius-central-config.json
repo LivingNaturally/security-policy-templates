@@ -2337,8 +2337,8 @@
       "provider": "manual process",
       "summary": "External applications are monitored for service interruptions or outages, and handled according to the impact and downtime of such events. Status page is set up for communicating any outage to customers.",
       "guidance": "You should include a process that describes how you recover from a service outage that impacts your application, including notification to users/customers.",
-      "applicable": true,
-      "adopted": true
+      "applicable": false,
+      "adopted": false
     },
     {
       "id": "cp-bcdr-data",
