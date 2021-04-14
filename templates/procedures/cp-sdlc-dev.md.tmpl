@@ -53,8 +53,8 @@ artifacts over time allow for one to trace the lineage of why our production
 software and services change over time.
 
 All {{companyShortName}} `git` repositories have a company standard configuration from a
-{{sourceControl}} perspective.  This standard is a guideline and can be relaxed, but
-socialize when those exceptions are needed.  One example of an exception, is the
+{{sourceControl}} perspective.  This standard is a guideline and can be relaxed
+when those exceptions are needed.  One example of an exception, is the
 `wiki` repository, as editing a wiki and always requiring a PR in this setting
 slows down 'flow'.
 
@@ -64,10 +64,10 @@ slows down 'flow'.
 
 -   Build: <#>
 
-**NOTE**: The Sandbox project (and repos) do not follow this standard.  And
+**NOTE**: Not all projects (and repos) follow this standard,
 certain projects might be excluded (e.g. `wiki`).
 
-**Developers follow the branch strategy and code review process below:**
+**Developers follow the master branch strategy and code review process below:**
 
 1. All development uses the main branch used for the
    current release. Any changes required for a new feature or defect fix are
@@ -98,9 +98,11 @@ certain projects might be excluded (e.g. `wiki`).
       they are not applicable.
     * If changes/commits are made, it should reset previous approvals
       and require review and approvals again before the code can be deployed.
+<!--
     * Once the review process finishes, each reviewer should approve the code, at
       which point the original author(s) may merge their change into the main
       branch (i.e. master).
+-->
 
 4. If the feature or defect interacts with sensitive data, or controls access to
    sensitive data, or contains security/risky infrastructure
