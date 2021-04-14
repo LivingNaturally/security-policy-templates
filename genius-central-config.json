@@ -2654,8 +2654,8 @@
       "considerations": [
         "Is your organization subject to GDPR compliance? If not, remove/replace."
       ],
-      "applicable": true,
-      "adopted": true
+      "applicable": false,
+      "adopted": false
     }
   ]
 }
