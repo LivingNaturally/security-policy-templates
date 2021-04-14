@@ -31,7 +31,7 @@ next time you'd like to rebuild the policies and procedures:
 
 ```bash
 psp build -t ./templates -c genius-central-config.json
-# Pre-requisite `pip install mkdocs mkdocs-material mkdocs-with-pdf`
+# Pre-requisite `pip install mkdocs mkdocs-material mkdocs-with-pdf yq`
 #    https://weasyprint.readthedocs.io/en/latest/install.html#windows
 mkdocs build
 # Convert to word document
