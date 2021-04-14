@@ -27,7 +27,7 @@
     "cookiePolicyURL": "https://geniuscentral.com/policies/cookie-policy",
     "sourceControl": "GitHub",
     "ticketingSystem": "Jira",
-    "internalHelpdeskURL": "",
+    "internalHelpdeskURL": "mailto:helpdesk@geniuscentral.com",
     "cmPortal": "https://livnat.atlassian.net/",
     "ciSystem": "Octopus",
     "hrSystem": "TriNet",
