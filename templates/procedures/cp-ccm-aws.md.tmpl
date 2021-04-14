@@ -6,8 +6,8 @@
 top-level AWS account (master). Sub-accounts are connected that each hosts
 separate workloads and resources in its own sandboxed environment. The master
 account itself handles aggregated billing for all connected sub-accounts but
-does not host any workload, service or resource, with the exception of DNS
-records for {{companyShortName}} root domain, using AWS Route53 service. DNS
+does not host any workload, service or resource, with the exception of Route53,
+ECR (for approved containers), and CloudTrail log aggregation hosting. DNS
 records for subdomains are maintained in the corresponding sub-accounts.
 
 Access to each account is funneled through our designated SSO provider, which
@@ -19,7 +19,9 @@ The account and network structure looks like the following:
 
 ```
 SSO/IdP ── {{companyShortName}}-master
-            │  └── billing and root DNS records only
+            │  └── billing and root DNS records
+            │  └── master container repository (for approved containers)
+            │  └── CloudTrail aggregation (write-only S3 bucket)
             │
             ├── {{companyShortName}}-dev
             │    └── VPC
@@ -28,20 +30,6 @@ SSO/IdP ── {{companyShortName}}-master
             │                  └── EC2 instances
             │                       └── Docker containers
             │            
-            ├── {{companyShortName}}-test
-            │    └── VPC
-            │         └── Subnets
-            │              └── Security-Groups
-            │                   └── EC2 instances
-            │                        └── Docker containers
-            │
-            ├── {{companyShortName}}-infra
-            │    └── VPC
-            │         └── Subnets
-            │              └── Security-Groups
-            │                   └── EC2 instances
-            │                        └── Docker containers
-            │
             ├── {{companyShortName}}-prod-us1
             │    └── VPC
             │         └── Subnets
@@ -49,7 +37,10 @@ SSO/IdP ── {{companyShortName}}-master
             │                   └── EC2 instances
             │                        └── Docker containers
             │
-            ├── {{companyShortName}}-prod-us2
+            ├── {{companyShortName}}-security (for audit trail and compliance aggregation)
+            │  └── Guard Duty
+            │  └── Security Hub
+            │  └── Config
             │
             ...
 ```
