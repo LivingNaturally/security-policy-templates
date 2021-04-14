@@ -19,7 +19,8 @@ extra_css:
 
 plugins:
   - search
-  - with-pdf
+  - with-pdf:
+      cover_subtitle: Security Policies, Standards, and Procedures
 
 markdown_extensions:
   - smarty
