@@ -2274,8 +2274,8 @@
         "What tooling is used for endpoint device management?",
         "Is BYOD allowed?"
       ],
-      "applicable": false,
-      "adopted": false
+      "applicable": true,
+      "adopted": true
     },
     {
       "id": "cp-bcdr",
