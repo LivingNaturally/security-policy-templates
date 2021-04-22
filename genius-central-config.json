@@ -471,24 +471,6 @@
       "procedures": [
         "cp-privacy-notices"
       ]
-    },
-    {
-      "id": "ref",
-      "file": "policies/ref.md",
-      "name": "Addendum and References",
-      "adopted": true,
-      "procedures": [
-        "ref-definitions",
-        "ref-employee-handbook",
-        "ref-approved-software",
-        "ref-approved-vendors",
-        "ref-cookie-policy",
-        "ref-privacy-policy",
-        "ref-hipaa-baa",
-        "ref-gdpr-dpa",
-        "ref-hipaa-mapping",
-        "ref-nist-mapping"
-      ]
     }
   ],
   "procedures": [

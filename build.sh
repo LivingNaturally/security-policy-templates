@@ -39,5 +39,5 @@ sed -i "s/definitions\.md/\#appendix-d-key-definitions/" temp.md
 sed -i "s/privacy-policy\.md/\#appendix-e-privacy-policy/" temp.md
 sed -i "s/cookie-policy\.md/\#appendix-f-cookie-policy/" temp.md
 pandoc -s --toc -o site/docx/policies.docx temp.md
-#rm temp.md
+rm temp.md
 echo "Please open $(pwd)/site/docx/policies.docx in Microsoft Word to fix the TOC."
