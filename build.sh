@@ -1,14 +1,14 @@
 #!/bin/bash
-#rm -fr ./site/* ./docs/* ./partials/*
-#psp build -t ./templates -c genius-central-config.json
-#mkdocs build
-#mkdir -p site/docx
+rm -fr ./site/* ./docs/* ./partials/*
+psp build -t ./templates -c genius-central-config.json
+mkdocs build
+mkdir -p site/docx
 cat `cat mkdocs.yml | grep -v index.md | yq -r '.pages[] | to_entries[] | "docs/\(.value)"'` > temp.md
 for token in $(cat mkdocs.yml | grep -v index.md | yq -r '.pages[] | to_entries[] | "\(.value)"'); do
     sed -i "s/$token#/#/g" temp.md
 done
 sed -i "s/program\.md/\#security-program-overview/" temp.md
-sed -i "s/corp-gov\.md/\#corporate-governance/" temp.md
+#sed -i "s/corp-gov\.md/\#corporate-governance/" temp.md
 sed -i "s/policy-mgmt\.md/\#policy-management/" temp.md
 sed -i "s/model\.md/\#security-architecture-and-operating-model/" temp.md
 sed -i "s/rar\.md/\#roles-responsibilities-and-training/" temp.md
@@ -39,5 +39,5 @@ sed -i "s/definitions\.md/\#appendix-d-key-definitions/" temp.md
 sed -i "s/privacy-policy\.md/\#appendix-e-privacy-policy/" temp.md
 sed -i "s/cookie-policy\.md/\#appendix-f-cookie-policy/" temp.md
 pandoc -s --toc -o site/docx/policies.docx temp.md
-rm temp.md
+#rm temp.md
 echo "Please open $(pwd)/site/docx/policies.docx in Microsoft Word to fix the TOC."

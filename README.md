@@ -44,7 +44,7 @@ pandoc -s -o site/docx/policies.docx docs/index.md docs/program.md docs/corp-gov
 
 The result files are put in `./docs` (Markdown) `./site` (HTML) `/site/pdf/document.pdf` (PDF) `site/docx/policies.docx` (DOCX).
 
-Upload using the `FTP-UploadDirectory` PowerShell script. Password is in AnyPassword Pro (BlueHost -> ftp_polices)
+Upload using the `FTP-UploadDirectory` PowerShell script. Password is in BitWarden (BlueHost -> ftp_polices)
 
 **IMPORTANT:** To edit the policies and procedures, use the template files in
 `./templates` and re-run the `psp build` command. Do _not_ edit the `./docs` and

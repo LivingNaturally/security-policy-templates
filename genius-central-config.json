@@ -9,8 +9,8 @@
     "contactPhoneNumber": "(800) 360-2231",
     "ceoName": "Kirsten Hogan",
     "ceoEmail": "khogan@geniuscentral.com",
-    "cooName": "",
-    "cooEmail": "",
+    "cooName": "None",
+    "cooEmail": "noreply@geniuscentral.com",
     "ctoName": "Jonathan DeMarks",
     "ctoEmail": "jdemarks@geniuscentral.com",
     "securityOfficerName": "Jonathan DeMarks",
@@ -154,7 +154,7 @@
       "id": "corp-gov",
       "file": "policies/corp-gov.md",
       "name": "Corporate Governance",
-      "adopted": true,
+      "adopted": false,
       "procedures": [
         "cp-gov-bod"
       ]
@@ -660,8 +660,8 @@
         "What tooling do you use for HIPAA or FISMA Awareness Training?",
         "What interval do employees to have to complete training?"
       ],
-      "applicable": true,
-      "adopted": true,
+      "applicable": false,
+      "adopted": false,
       "resources": [
         {
           "name": "View/download HIPAA awareness training package",
@@ -680,8 +680,8 @@
       "considerations": [
         "What is your company-wide communication frequency?"
       ],
-      "applicable": true,
-      "adopted": true,
+      "applicable": false,
+      "adopted": false,
       "resources": []
     },
     {
@@ -1092,8 +1092,8 @@
       "considerations": [
         "Do you have an incentive or rewards program/tool?"
       ],
-      "applicable": true,
-      "adopted": true
+      "applicable": false,
+      "adopted": false
     },
     {
       "id": "cp-employee-development",
