@@ -2,6 +2,9 @@
 rm -fr ./site/* ./docs/* ./partials/*
 psp build -t ./templates -c genius-central-config.json
 mkdocs build
+sed 's/class="md-sidebar\ /style="display: none" class="md-sidebar\ /g' site/privacy-policy/index.html > site/privacy-policy/index-standalone.html
+sed -i 's/class="md-search"/style="display: none" class="md-search"/g' site/privacy-policy/index-standalone.html
+sed -i 's/class="md-footer"/style="display: none" class="md-footer"/g' site/privacy-policy/index-standalone.html
 mkdir -p site/docx
 cat `cat mkdocs.yml | grep -v index.md | yq -r '.pages[] | to_entries[] | "docs/\(.value)"'` > temp.md
 for token in $(cat mkdocs.yml | grep -v index.md | yq -r '.pages[] | to_entries[] | "\(.value)"'); do
